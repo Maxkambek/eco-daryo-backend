@@ -93,6 +93,7 @@ class RegionUnitAdmin(TranslationAdmin):
         }
 
 
+@admin.register(LegalDocs)
 class LegalDocsAdmin(TranslationAdmin):
     list_display = ('name', 'id', 'link')
 

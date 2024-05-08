@@ -100,6 +100,10 @@ class RegionUnit(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Hududiy bo'linma"
+        verbose_name_plural = "Hududiy bo'linmalar"
+
 
 class LegalDocs(models.Model):
     name = models.CharField(max_length=222)

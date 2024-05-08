@@ -34,6 +34,11 @@ class RegionUnitList(generics.ListAPIView):
     serializer_class = RegionUnitSerializer
 
 
+class RegionUnitDetail(generics.RetrieveAPIView):
+    queryset = RegionUnit.objects.all()
+    serializer_class = RegionUnitSerializer
+
+
 class LegalDocsList(generics.ListAPIView):
     queryset = LegalDocs.objects.all()
     serializer_class = LegalDocsSerializer
